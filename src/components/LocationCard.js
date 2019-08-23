@@ -3,11 +3,13 @@ import styled from "styled-components";
 
 
 const Card = styled.div`
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    margin: 20px auto;
-    width: 200px;
-    padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  width: 200px;
+  padding: 10px;
 `
 
 

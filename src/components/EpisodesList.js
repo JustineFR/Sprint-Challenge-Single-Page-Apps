@@ -24,13 +24,13 @@ export default function EpisodesList(props) {
 
   return (
     <section className="episode-list grid-view">
-      {/* {episodes.map(episode => {
+      {episodes.map(episode => {
       return (
-            <EpisodeCard name={episode.name} type={location.type} dimension={location.dimension}/>
+            <EpisodeCard name={episode.name} episode={episode.episode} air_date={episode.air_date}/>
         )
       }
       )
-      } */}
+      }
     </section>
   );
 }
