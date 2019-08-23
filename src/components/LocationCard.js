@@ -12,11 +12,6 @@ const Card = styled.div`
   padding: 10px;
 `
 
-
-
-
-
-
 export default function LocationCard({ name, type, dimension, residents }) {
   return (
     <Card>

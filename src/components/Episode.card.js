@@ -13,10 +13,6 @@ const Card = styled.div`
 `
 
 
-
-
-
-
 export default function LocationCard({ name, episode, air_date }) {
   return (
     <Card>

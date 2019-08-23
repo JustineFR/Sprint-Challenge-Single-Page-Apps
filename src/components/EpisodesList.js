@@ -4,10 +4,8 @@ import EpisodeCard from './Episode.card';
 
 export default function EpisodesList(props) {
     const [episodes, setEpisodes] = useState([])
-  // TODO: Add useState to track data from useEffect
 
   useEffect(() => {
-    // props.match.params.id
       axios
       .get(`https://rickandmortyapi.com/api/episode/`)
       .then(response => {
@@ -18,8 +16,6 @@ export default function EpisodesList(props) {
       .catch(error => {
         console.error(error);
       });
-    // TODO: Add API Request here - must run in `useEffect`
-    //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
   }, [props.match.params.id]);
 
   return (
@@ -27,10 +23,7 @@ export default function EpisodesList(props) {
       {episodes.map(episode => {
       return (
             <EpisodeCard name={episode.name} episode={episode.episode} air_date={episode.air_date}/>
-        )
-      }
-      )
-      }
+        )})}
     </section>
   );
 }
