@@ -37,3 +37,22 @@ main {
 header h1 {
   text-align: center;
 }
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+p {
+  color: grey;
+  margin-left: 10px;
+}
+
+a {
+  color: #837C7C;
+}
+
+a:hover {
+  color: #4F4E4E;
+}
